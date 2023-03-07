@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+<body>
+
+	<p id="textViewTexto">[Texto que será substituído]</p>
+	
+		<input type="text" id="editTextNovoTexto" value="Digite o novo texto aqui"><p>
+		<button onclick="substituirTexto();">Substituir Texto</button>
+	
+
+	<script type="text/javascript">
+	    function substituirTexto() {
+	      var textViewTexto = document.getElementById('textViewTexto')
+	      var editTextNovoTexto = document.getElementById('editTextNovoTexto')
+	      textViewTexto.innerHTML = editTextNovoTexto.value
+	      editTextNovoTexto.value = ""
+    }
+  </script>
+  
+</body>
+</html>
