@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Window setInterval() e clearInterval</h1>
+	<p>O método <strong>setInterval()</strong>  chama uma função em intervalos especificados (em milissegundos). O método <strong>clearInterval()</strong> interrompe sua execução. </p>
+	<p>Exemplo: 
+		<button onclick="iniciarRelogio()" id="botao">Clique para ver o exemplo abaixo:</button>
+
+		<div class="exemplo">
+<pre>
+	function iniciarRelogio() {
+    	setInterval(atualizarRelogio, 1000);
+	}
+
+	function atualizarRelogio() {
+    	var dataAtual = new Date()
+		var hora = dataAtual.getHours()
+    	var minuto = dataAtual.getMinutes()
+    	var segundo = dataAtual.getSeconds()
+    	var horaForm = hora + ":" + minuto + ":" + segundo
+    	var saida = document.getElementById("botao")
+	    saida.innerHTML = horaForm
+	}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/met_win_settimeout.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
