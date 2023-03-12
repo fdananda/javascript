@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Number toFixed()</h1>
+	<p>O método <strong>toFixed()</strong> converte um número em uma string e arredonda a string para um número especificado de casas decimais.</p>
+	<p>Exemplo: 
+		<button onclick="converterParaString()" id="botao">Clique para ver o exemplo abaixo:</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+	function converterParaString() {
+	let numero1  	= 20/30
+	let numero2 	= 3.14159
+	
+	let textoSaida = 
+	"20/30 sem o toFixed: " + numero1 + 
+	" 3.14159 sem o toFixed: " + numero2 + 
+	" 20/30 com o toFixed(): " + numero1.toFixed() + 
+	" 3.14159 com o toFixed(1) para uma casa decimal: " + numero2.toFixed(1) 
+
+	let saida = document.getElementById("exemplos")
+	saida.innerHTML = textoSaida
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/jsref_tofixed.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
