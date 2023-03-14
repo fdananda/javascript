@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Boolean()</h1>
+	<p>A função <strong>Boolean()</strong> descobre se uma expressão (ou uma variável) é verdadeira ou falsa. Tudo com um "Valor" é Verdadeiro e tudo sem um "Valor" é Falso</p>
+	<p>Exemplo: 
+		<button onclick="abrirTrue()" id="botao">Clique para ver exemplos de true</button>
+		<button onclick="abrirFalse()" id="botao">Clique para ver exemplos de false</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function abrirTrue() {
+	let true1  	= 1 < 2
+	let true2 	= "Fernanda"
+	let true3   = 25 - 30
+	let true4   = "false"  
+	
+	let textoSaida = 
+	"1 < 2: " + Boolean(true1) + 
+	"String Fernanda: " + Boolean(true2) + 
+	"Cálculo de 25 - 30 (-5): " + Boolean(true3) + 
+	"String false: " + Boolean(true4) 
+
+	let saida = document.getElementById("exemplos")
+	saida.innerHTML = textoSaida
+}
+
+function abrirFalse() {
+	let false1  = 0
+	let false2 	= -0
+	let false3  = ""
+	let false4  = null
+	let false5 
+	let false6 = false
+	let false7 = 2 / "Fernanda" 
+	
+	let textoSaida = 
+	"Número 0: " + Boolean(false1) + 
+	"Número - 0: " + Boolean(false2) + 
+	"String vazia: " + Boolean(false3) + 
+	"Valor null: " + Boolean(false4) +  
+	"Variável não definida: " + Boolean(false5) + 
+	"Valor booleano false: " + Boolean(false6) + 
+	"Nan (Not a number): " + Boolean(false7) 
+
+	let saida = document.getElementById("exemplos")
+	saida.innerHTML = textoSaida
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/js/js_booleans.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
