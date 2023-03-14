@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Date()</h1>
+	<p>O método <strong>new Date()</strong> cria um objeto de data com a data e hora atuais. </p>
+	<p>Exemplo: 
+		<button onclick="mostrarDataAtual()" id="botao">Clique para ver o exemplo abaixo:</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function mostrarDataAtual() {
+    let dataAtual = new Date()<br>
+    let dia 		= dataAtual.getDate()
+    let mes  		= dataAtual.getMonth() + 1
+    let ano			= dataAtual.getFullYear()
+    let dataFormatada = dia + "/" + mes + "/" + ano<br>
+    let hora = dataAtual.getHours()
+    let minuto = dataAtual.getMinutes()
+    let segundo = dataAtual.getSeconds()
+    let horaFormatada = hora + ":" + minuto + ":" + segundo<br>
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = "Data e hora atual: " + dataFormatada + " - " + horaFormatada
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/js/js_date_methods.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
