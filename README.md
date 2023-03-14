@@ -9,3 +9,4 @@ Códigos JavaScript
 <li><b>Number toFixed()</b> - (11/03/2023) -  converte um número em uma string e arredonda a string para um número especificado de casas decimais.<br>https://github.com/fdananda/javascript/tree/main/number_tofixed</li>
 <li><b>Audio play() Method / Audio pause() Method</b> - (13/03/2023) -  O método audio.play() inicia a reprodução do áudio atual. O método audio.pause() interrompe o áudio que está sendo reproduzido.<br>https://github.com/fdananda/javascript/tree/main/audio</li>
 <li><b>Boolean()</b> - (13/03/2023) - descobre se uma expressão (ou uma variável) é verdadeira ou falsa<br>https://github.com/fdananda/javascript/tree/main/boolean</li>
+<li><b>Date()</b> - (13/03/2023) - cria um objeto de data com a data e hora atuais.<br>https://github.com/fdananda/javascript/tree/main/date</li>
