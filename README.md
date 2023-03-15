@@ -11,3 +11,4 @@ Códigos JavaScript
 <li><b>Boolean()</b> - (13/03/2023) - descobre se uma expressão (ou uma variável) é verdadeira ou falsa<br>https://github.com/fdananda/javascript/tree/main/boolean</li>
 <li><b>Date()</b> - (13/03/2023) - cria um objeto de data com a data e hora atuais.<br>https://github.com/fdananda/javascript/tree/main/date</li>
 <li><b>Function()</b> - (14/03/2023) - Em Javascript, as funções são objetos e possuem propriedades e métodos.<br>https://github.com/fdananda/javascript/tree/main/function</li>
+<li><b>Array</b> - (14/03/2023) - O objeto Array é usado para armazenar vários valores em uma única variável.<br>https://github.com/fdananda/javascript/tree/main/array</li>
