@@ -13,3 +13,4 @@ Códigos JavaScript
 <li><b>Function()</b> - (14/03/2023) - Em Javascript, as funções são objetos e possuem propriedades e métodos.<br>https://github.com/fdananda/javascript/tree/main/function</li>
 <li><b>Array</b> - (14/03/2023) - O objeto Array é usado para armazenar vários valores em uma única variável.<br>https://github.com/fdananda/javascript/tree/main/array</li>
 <li><b>Template String/Literals</b> - (14/03/2023) - O Template String/Literals usa acentos graves (``) em vez de aspas ("") para definir uma string.<br>https://github.com/fdananda/javascript/tree/main/template_string</li>
+<li><b>Estruturas condicionais</b> - (14/03/2023) - if... else / switch / operador ternário.<br>https://github.com/fdananda/javascript/tree/main/estruturas_condicionais</li>
