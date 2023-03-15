@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Array</h1>
+	<p>O objeto <strong>Array</strong> é usado para armazenar vários valores em uma única variável. </p>
+	<p>Exemplo: 
+		<button onclick="gerarArray()" id="botao">Clique para ver o exemplo abaixo</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function gerarArray() {
+    let nomes = ["Fernanda", "Helena", "Rodrigues", "Moreira"]
+    //push() - O método push() adiciona novo(s) item(ns) ao final do array.
+    nomes.push("Novo Nome Incluído")
+    nomes.push("Nome a ser deletado")
+
+    //pop() - O método pop() remove o último elemento do array.
+    nomes.pop()
+
+    let listaNome = ""
+    
+    for (i=0; i < nomes.length; i++) {
+        listaNome += "+ " + nomes[i]
+    }
+
+    let textoSaida = 
+    "Array nomes: " + nomes +
+    " Tamanho do Array: " + nomes.length +
+    " Itens do Array: " 
+    + listaNome + 
+    //includes() -  O método includes() retorna true se o array contém o valor especificado e retorna false se o valor não for encontrado.
+    "Existe uma Fernanda? " + nomes.includes("Fernanda") +
+    "Existe uma Amanda? " + nomes.includes("Amanda")
+
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = textoSaida
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/jsref_obj_array.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
