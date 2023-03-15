@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Template String/Literals</h1>
+	<p>O <strong>Template String/Literals</strong> usa acentos graves (``) em vez de aspas ("") para definir uma string, fornecendo uma maneira fácil de interpolar variáveis e expressões em strings. </p>
+	<p>Exemplo: 
+		<button onclick="gerarString()" id="botao">Clique para ver o exemplo abaixo</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function gerarString() {
+    
+    let nome    = "Fernanda"
+    let idade   = 45
+    let data    = new Date()
+    let dia     = data.getDate()
+    let mes     = data.getMonth() + 1
+    let ano     = data.getFullYear()
+
+    let textoSaidaConvencional = "Olá, " + nome + ", hoje é dia " + dia + "/" + mes + "/" + ano + " e você tem " + idade + " anos. "
+    let textoComTemplateStrings = `Olá, ${nome}, hoje é dia ${dia}/${mes}/${ano} e você tem ${idade} anos. `
+    let textoSaida = textoSaidaConvencional + textoComTemplateStrings
+
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = textoSaida
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/js/js_string_templates.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
