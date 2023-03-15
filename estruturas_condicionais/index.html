@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Estruturas condicionais/Conditional Statements - if... else / switch / operador ternário</h1>
+	<p>A instrução <strong>if</strong> especifica um bloco de código a ser executado, se uma condição especificada for verdadeira. A instrução <strong>else</strong>  especifica um bloco de código a ser executado, se a mesma condição for falsa. O <strong>else if</strong> especifica uma nova condição para testar se a condição anterior for falsa.</p>
+	<p>A instrução <strong>switch</strong> executa um bloco de código dependendo de diferentes casos. Essa é a solução perfeita para instruções if/else longas e aninhadas.</p>
+	<p>O <strong>Operador Ternário</strong> funciona como uma versão simplificada da instrução if else, com a estrutura formada por: condicao ? valor verdadeiro : valor falso</p>
+	<p>Exemplo: <br>
+		<button onclick="chamarIfElse()" id="botao">Clique aqui para testar a instrução if... else abaixo</button><p>
+		<button onclick="chamarSwitch()" id="botao">Clique aqui para testar a instrução switch abaixo</button><p>
+		<button onclick="chamarOperadorTernario()" id="botao">Clique aqui para chamar o operador ternário switch abaixo</button><p>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function chamarIfElse() {
+
+    let idade = 45
+    let textoSaida = ""
+
+    if (idade <= 18) {
+        textoSaida = "Você é criança"
+    }else if(idade > 18 && idade < 60){
+        textoSaida = "Você é adulto"
+    }else if (idade >= 60 && idade < 120){
+        textoSaida = "Você é idoso"
+    }else{
+        textoSaida = "Você é uma lenda"
+    }
+
+	let saida = document.getElementById("exemplos")
+	saida.innerHTML = textoSaida
+}
+
+function chamarSwitch() {
+
+    let textoSaida = ""
+
+    switch (new Date().getDay()) {
+      case 0:
+        textoSaida = "Domingo";
+        break;
+      case 1:
+        textoSaida = "Segunda-feira";
+        break;
+      case 2:
+        textoSaida = "Terça-feira";
+        break;
+      case 3:
+        textoSaida = "Quarta-feira";
+        break;
+      case 4:
+        textoSaida = "Quinta-feira";
+        break;
+      case 5:
+        textoSaida = "Sexta-feira";
+        break;
+      case 6:
+        textoSaida = "Sábado";
+        break;
+      default:
+        textoSaida = "ops...";
+    }
+
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = "Hoje é " + textoSaida
+}
+
+function chamarOperadorTernario() {
+
+    let nome = "Fernand"
+    let textoSaida = ""
+
+    nome == "Fernanda" ? textoSaida = "O nome escolhido é Fernanda" : textoSaida = "O nome escolhido não é Fernanda"
+
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = textoSaida
+}
+</pre>
+		</div>
+	<p class="referencia">Referência:<br>
+	If... else 	-  <a href="https://www.w3schools.com/jsref/jsref_if.asp" target="_blank">www.w3schools</a><br>
+	Switch		-  <a href="https://www.w3schools.com/jsref/jsref_switch.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
