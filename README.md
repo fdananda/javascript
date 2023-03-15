@@ -10,3 +10,4 @@ Códigos JavaScript
 <li><b>Audio play() Method / Audio pause() Method</b> - (13/03/2023) -  O método audio.play() inicia a reprodução do áudio atual. O método audio.pause() interrompe o áudio que está sendo reproduzido.<br>https://github.com/fdananda/javascript/tree/main/audio</li>
 <li><b>Boolean()</b> - (13/03/2023) - descobre se uma expressão (ou uma variável) é verdadeira ou falsa<br>https://github.com/fdananda/javascript/tree/main/boolean</li>
 <li><b>Date()</b> - (13/03/2023) - cria um objeto de data com a data e hora atuais.<br>https://github.com/fdananda/javascript/tree/main/date</li>
+<li><b>Function()</b> - (14/03/2023) - Em Javascript, as funções são objetos e possuem propriedades e métodos.<br>https://github.com/fdananda/javascript/tree/main/function</li>
