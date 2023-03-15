@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Function()</h1>
+	<p>Em JavaScript, as funções são objetos e possuem propriedades e métodos. </p>
+	<p>Exemplo: <br>
+		<button onclick="chamarFuncaoSemParametrosESemRetorno()" id="botao">Clique aqui para chamar função sem parâmetros e sem retorno</button><p>
+		<button onclick="chamarFuncaoComParametrosESemRetorno('Opção 2 - Executada função com parâmetro e sem retorno')" id="botao">Clique aqui para chamar função com parâmetros e sem retorno</button><p>
+		<button onclick="chamarFuncaoComParametrosEComRetorno('Opção 3 - Executada função com parâmetro e com retorno')" id="botao">Clique aqui para chamar função com parâmetros e sem retorno</button><p>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function chamarFuncaoSemParametrosESemRetorno() {
+	let saida = document.getElementById("exemplos")
+	saida.innerHTML = "Opção 1 - Executada função sem parâmetro e sem retorno"
+}
+
+function chamarFuncaoComParametrosESemRetorno(parametro) {
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = parametro
+}
+
+function chamarFuncaoComParametrosEComRetorno(parametro2) {
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = executarFuncao(parametro2)
+}
+
+function executarFuncao(parametro3) {
+    return parametro3
+}
+
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/jsref_function.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
