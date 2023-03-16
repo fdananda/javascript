@@ -2,11 +2,16 @@ function chamarFor() {
     let nomes = ["Fernanda", "Helena", "Rodrigues", "Moreira"]
     let listaNome = ""
 
-    
+    /*opção 1 de for    
     for (i=0; i < nomes.length; i++) {
         listaNome += "+ " + nomes[i] + "<br>"
     }
+    */
 
+    //opção 2 de for
+    for (i in nomes){
+     listaNome += "+ " + nomes[i] + "<br>"   
+    }
 
     let saida = document.getElementById("exemplos")
         saida.innerHTML = "Resultado da instrução for: <br>" + listaNome
