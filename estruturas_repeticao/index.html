@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Estruturas de repetição/loops - for / while / do... while</h1>
+	<p>A instrução <strong>for</strong> define um bloco de código que é executado desde que uma condição seja true.</p>
+  <p>A instrução <strong>while</strong> cria um loop (em um bloco de código) que é executado enquanto uma condição é true.</p>
+  <p>A instrução <strong>do...while</strong> define um bloco de código a ser executado uma vez e repetido enquanto uma condição for true. É usado quando se deseja executar um bloco de código pelo menos uma vez.
+	<p>Exemplo: <br>
+		<button onclick="chamarFor()" id="botao">Clique aqui para testar a instrução for abaixo</button><p>
+		<button onclick="chamarWhile()" id="botao">Clique aqui para testar a instrução while abaixo</button><p>
+		<button onclick="chamarDoWhile()" id="botao">Clique aqui para chamar a instrução do... while abaixo</button><p>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function chamarFor() {
+    let nomes = ["Fernanda", "Helena", "Rodrigues", "Moreira"]
+    let listaNome = ""
+    
+    for (i=0; i < nomes.length; i++) {
+        listaNome += "+ " + nomes[i] + "<br>"
+    }
+
+    let saida = document.getElementById("exemplos")
+        saida.innerHTML = "Resultado da instrução for: <br>" + listaNome
+}
+
+function chamarWhile() {
+    let nomes = ["Fernanda", "Helena", "Rodrigues", "Moreira"]
+    let listaNome = ""
+    let i = 0;
+
+    while (i < nomes.length) {
+     listaNome += "+ " + nomes[i] + "<br>"
+     i++;
+    }
+
+    let saida = document.getElementById("exemplos")
+        saida.innerHTML = "Resultado da instrução while: <br>" + listaNome
+}
+
+
+function chamarDoWhile() {
+    let nomes = ["Fernanda", "Helena", "Rodrigues", "Moreira"]
+    let listaNome = ""
+    let i = 0;
+
+    do {
+     listaNome += "+ " + nomes[i] + "<br>"
+     i++;
+    }
+    while (i < nomes.length);
+
+    let saida = document.getElementById("exemplos")
+        saida.innerHTML = "Resultado da instrução do... while: <br>" + listaNome
+}
+</pre>
+		</div>
+	<p class="referencia">Referência:<br>
+	for 	-  <a href="https://www.w3schools.com/jsref/jsref_for.asp" target="_blank">www.w3schools</a><br>
+	while	-  <a href="https://www.w3schools.com/jsref/jsref_while.asp" target="_blank">www.w3schools</a></br>
+  do... while -  <a href="https://www.w3schools.com/jsref/jsref_dowhile.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
