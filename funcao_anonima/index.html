@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Função anônima / Arrow functions</h1>
+	<p><strong>Funções anônimas</strong> são armazenadas em variáveis e não precisam de nomes. Elas são sempre invocadas usando o nome da variável. </p>
+    <p>As <strong>arrow functions</strong> permitem uma sintaxe curta para escrever expressões de função, não sendo necessário usar as palavras function, return e chaves.</p>
+	<p>Exemplo: 
+		<button onclick="chamarFuncaoAnonima()" id="botao">Clique para ver o exemplo de função anônima abaixo</button>
+        <button onclick="chamarArrowFunction()" id="botao">Clique para ver o exemplo de arrow function abaixo</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+const funcaoAnonima = function(){ 
+    return "Função anônima executada"
+}
+
+function chamarFuncaoAnonima() {   
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = funcaoAnonima()
+}
+
+const arrowFunction = () => "Arrow Function executada"
+
+function chamarArrowFunction() {   
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = arrowFunction()
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/js/js_function_definition.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
