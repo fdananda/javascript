@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Classes e objetosgerarObjetoPessoa</h1>
+	<p></p>
+	<p>Exemplo: 
+		<button onclick="gerarObjetoPessoa()" id="botao">Clique para ver o exemplo de classe/obejto abaixo</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+class Pessoa {
+  constructor(nome, nascimento) {
+    this.nome       = nome;
+    this.nascimento = nascimento;
+  }
+
+  calcularIdade(){
+    const dataAtual = new Date();
+    return dataAtual.getFullYear() - this.nascimento;
+  }
+}
+
+function gerarObjetoPessoa() {   
+
+    const objetoPessoa = new Pessoa("Fernanda", 1977)
+
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = `A pessoa é ${objetoPessoa.nome}, nascida em ${objetoPessoa.nascimento} e com ${objetoPessoa.calcularIdade()} anos.`
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/js/js_class_intro.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
