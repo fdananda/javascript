@@ -16,3 +16,4 @@ Códigos JavaScript
 <li><b>Estruturas condicionais</b> - (14/03/2023) - if... else / switch / operador ternário.<br>https://github.com/fdananda/javascript/tree/main/estruturas_condicionais</li>
 <li><b>Estruturas de repetição/loops</b> - (14/03/2023) - for / while / do... while.<br>https://github.com/fdananda/javascript/tree/main/estruturas_repeticao</li>
 <li><b>Função anônima / Arrow functions</b> - (16/03/2023)<br>https://github.com/fdananda/javascript/tree/main/funcao_anonima</li>
+<li><b>Transpilação (Babel)</b> - (16/03/2023) - para converter o código ECMAScript 2015+ em uma versão compatível. <br>https://github.com/fdananda/javascript/tree/main/funcao_anonima</li>
