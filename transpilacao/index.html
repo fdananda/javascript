@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+
+	<!-- Load Babel -->
+	<!-- v6 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<!-- Your custom script here -->
+	<script type="text/babel">
+	const getMessage = () => "Hello World";
+	document.getElementById('output').innerHTML = getMessage();
+	</script>
+
+</head>
+<body>
+	<h1>Transpilação - ES6 -> ES5 (Babel)</h1>
+	<p>O Babel (https://babeljs.io/setup) é uma cadeia de ferramentas usada para converter o código ECMAScript 2015+ em uma versão compatível com versões anteriores do JavaScript em navegadores ou ambientes atuais e mais antigos. </p>
+	<div id="output"></div>
+
+	<p>Código a ser incluído no código: 
+		<div class="exemplo">
+<pre>
+&#x3C;div id=&#x22;output&#x22;&#x3E;&#x3C;/div&#x3E;
+&#x3C;!-- Load Babel --&#x3E;
+&#x3C;!-- v6 &#x3C;script src=&#x22;https://unpkg.com/babel-standalone@6/babel.min.js&#x22;&#x3E;&#x3C;/script&#x3E; --&#x3E;
+&#x3C;script src=&#x22;https://unpkg.com/@babel/standalone/babel.min.js&#x22;&#x3E;&#x3C;/script&#x3E;
+&#x3C;!-- Your custom script here --&#x3E;
+&#x3C;script type=&#x22;text/babel&#x22;&#x3E;
+const getMessage = () =&#x3E; &#x22;Hello World&#x22;;
+document.getElementById(&#x27;output&#x27;).innerHTML = getMessage();
+&#x3C;/script&#x3E;
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://babeljs.io/" target="_blank">Babel</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
