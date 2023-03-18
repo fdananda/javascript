@@ -15,7 +15,6 @@ function chamarFor() {
     */
 
     //opção 3 de for (of)
-    let nome = ""
     for (let i of nomes){
      listaNome += "+ " + i + "<br>"   
     }
