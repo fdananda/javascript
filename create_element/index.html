@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>DOM Document createElement()</h1>
+	<p>O método <strong>createElement()</strong> cria um nó de elemento.
+	<p>Exemplo: 
+		<button onclick="gerarLista()" id="botao">Clique para ver o exemplo de função anônima abaixo</button>
+		<p id="exemplos">
+			<ul id="lista"></ul>
+		</p>
+
+		<div class="exemplo">
+<pre>
+function gerarLista() { 
+
+let nomes = ["Fernanda", "Helena", "Rodrigues", "Moreira"]
+let listaNome = ""
+let saida = document.getElementById("lista")
+
+
+for (i=0; i < nomes.length; i++) {
+
+    listaNome += "+ " + nomes[i] + "<br>"
+    let itemLista = document.createElement("li")
+    itemLista.innerText = nomes[i]
+    saida.appendChild(itemLista)
+    }
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/met_document_createelement.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
