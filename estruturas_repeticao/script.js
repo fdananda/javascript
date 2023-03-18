@@ -8,9 +8,16 @@ function chamarFor() {
     }
     */
 
-    //opção 2 de for
+    /*opção 2 de for (in)
     for (i in nomes){
      listaNome += "+ " + nomes[i] + "<br>"   
+    }
+    */
+
+    //opção 3 de for (of)
+    let nome = ""
+    for (let i of nomes){
+     listaNome += "+ " + i + "<br>"   
     }
 
     let saida = document.getElementById("exemplos")
