@@ -19,5 +19,6 @@ Códigos JavaScript
 <li><b>Transpilação (Babel)</b> - (16/03/2023) - para converter o código ECMAScript 2015+ em uma versão compatível. <br>https://github.com/fdananda/javascript/tree/main/transpilacao</li>
 <li><b>Classe e Objeto</b> - (16/03/2023) <br>https://github.com/fdananda/javascript/tree/main/classes_objetos</li>
 <li><b>DOM Document createElement()</b> - (17/03/2023) O método createElement() cria um nó de elemento. <br>https://github.com/fdananda/javascript/tree/main/create_element</li>
-<li><b>Getter e setter()</b> - (17/03/2023) Ferramentas de encapsulamento <br>https://github.com/fdananda/javascript/tree/main/getter_setter</li>
+<li><b>Getter e setter()</b> - (20/03/2023) Ferramentas de encapsulamento <br>https://github.com/fdananda/javascript/tree/main/getter_setter</li>
+<li><b>Extends (Herança)()</b> - (20/03/2023) A palavra-chave extends é usada para criar uma classe filha de outra classe (superclasse).  <br>https://github.com/fdananda/javascript/tree/main/extends_heranca</li>
 
