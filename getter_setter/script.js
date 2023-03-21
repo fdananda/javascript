@@ -1,4 +1,3 @@
-//Opção 1 - Exemplo de criação de classe e objeto
 class Pessoa {
   constructor() {
     this._nome       = "";

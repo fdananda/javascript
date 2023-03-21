@@ -6,19 +6,34 @@
 	<title></title>
 </head>
 <body>
-	<h1>Classes e objetos</h1>
-	<p>Use a palavra-chave <strong>class</strong> para criar uma classe e adicione um método chamado constructor() com os atributos. Para criar um objeto, use a palavra chave <strong>new</strong> seguida do nome da Classe e entre parênteses os atributos definidos no construtor.</p>
+	<h1>Getter e Setter</h1>
+	<p>Use os atributos no construtor com <strong>underline (_)</strong> e crie as classes especiais <strong>get</strong> e <strong>set</strong> para garantir o pilar do encapsulamento.</p>
 	<p>Exemplo: 
 		<button onclick="gerarObjetoPessoa()" id="botao">Clique para ver o exemplo de classe/objeto abaixo</button>
 		<p id="exemplos"></p>
 
 		<div class="exemplo">
 <pre>
-//Opção 1 - Exemplo de criação de classe e objeto
 class Pessoa {
-  constructor(nome, nascimento) {
-    this.nome       = nome;
-    this.nascimento = nascimento;
+  constructor() {
+    this._nome       = "";
+    this._nascimento = 0;
+  }
+
+  get nome(){
+    return this._nome
+  }
+
+  set nome(nome){
+    this._nome = nome
+  }
+
+  get nascimento(){
+    return this._nascimento
+  }
+
+  set nascimento(nascimento){
+    this._nascimento = nascimento
   }
 
   calcularIdade(){
@@ -29,47 +44,13 @@ class Pessoa {
 
 function gerarObjetoPessoa() {   
 
-    const objetoPessoa = new Pessoa("Fernanda", 1977)
+    const objetoPessoa = new Pessoa()
+    objetoPessoa.nome = "Fernanda"
+    objetoPessoa.nascimento = 1977
 
     let saida = document.getElementById("exemplos")
     saida.innerHTML = `A pessoa é ${objetoPessoa.nome}, nascida em ${objetoPessoa.nascimento} e com ${objetoPessoa.calcularIdade()} anos.`
 }
-
-/*Opção 2 - Exemplo de Notação Literal de objeto
-const objetoPessoa = {
-
-   nome       : "Fernanda",
-   nascimento : 1977,
-
-   calcularIdade: function(){
-      const dataAtual = new Date();
-      return dataAtual.getFullYear() - this.nascimento;
-    }
-  }
-
-function gerarObjetoPessoa() {  
-
-  let saida = document.getElementById("exemplos")
-  saida.innerHTML = `A pessoa é ${objetoPessoa.nome}, nascida em ${objetoPessoa.nascimento} e com ${objetoPessoa.calcularIdade()} anos.`
-}
-*/
-
-/*Opção 3 - Exemplo de Notação de Construtor (objeto em branco)
-const objetoPessoa = new Object()
-
-objetoPessoa.nome       = "Fernanda"
-objetoPessoa.nascimento = 1977
-objetoPessoa.calcularIdade = function(){
-      const dataAtual = new Date();
-      return dataAtual.getFullYear() - this.nascimento;    
-}
-
-function gerarObjetoPessoa() {  
-
-  let saida = document.getElementById("exemplos")
-  saida.innerHTML = `A pessoa é ${objetoPessoa.nome}, nascida em ${objetoPessoa.nascimento} e com ${objetoPessoa.calcularIdade()} anos.`
-}
-*/
 </pre>
 		</div>
 	<p class="referencia">Referência: <a href="https://www.w3schools.com/js/js_class_intro.asp" target="_blank">www.w3schools</a></p>
