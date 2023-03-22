@@ -54,3 +54,48 @@ function gerarObjetoPessoa() {
   saida.innerHTML = `A pessoa é ${objetoPessoa.nome}, nascida em ${objetoPessoa.nascimento} e com ${objetoPessoa.calcularIdade()} anos.`
 }
 */
+
+/*Opção 4 - Funções construtoras
+const Pessoa = function() {
+
+  this.nome       = ""
+  this.nascimento = 0
+
+  this.calcularIdade = function(){
+    const dataAtual = new Date();
+    return dataAtual.getFullYear() - this.nascimento;
+  }
+}
+
+function gerarObjetoPessoa() {   
+
+    const objetoPessoa = new Pessoa()
+    objetoPessoa.nome = "Fernanda"
+    objetoPessoa.nascimento = 1977
+
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = `A pessoa é ${objetoPessoa.nome}, nascida em ${objetoPessoa.nascimento} e com ${objetoPessoa.calcularIdade()} anos.`
+}
+*/
+
+/*Opção 5 - Funções Factory
+const Pessoa = function(nome, nascimento) {
+  return{  
+    nome,
+    nascimento,
+
+    calcularIdade(){
+    const dataAtual = new Date();
+    return dataAtual.getFullYear() - nascimento;
+    }
+  }
+}
+
+function gerarObjetoPessoa() {   
+
+    const objetoPessoa = Pessoa("Fernanda", 1977)
+  
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = `A pessoa é ${objetoPessoa.nome}, nascida em ${objetoPessoa.nascimento} e com ${objetoPessoa.calcularIdade()} anos.`
+}
+*/
