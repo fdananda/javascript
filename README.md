@@ -22,4 +22,5 @@ Códigos JavaScript
 <li><b>Getter e setter()</b> - (20/03/2023) Ferramentas de encapsulamento <br>https://github.com/fdananda/javascript/tree/main/getter_setter</li>
 <li><b>Extends (Herança)</b> - (20/03/2023) A palavra-chave extends é usada para criar uma classe filha de outra classe (superclasse).  <br>https://github.com/fdananda/javascript/tree/main/extends_heranca</li>
 <li><b>Object.freeze()</b> - (21/03/2023) O método freeze() de Object impede que as propriedades existentes sejam modificadas e que novas propriedades sejam adicionadas ao objeto específico.<br>https://github.com/fdananda/javascript/tree/main/object_freeze</li>
+<li><b>Try...catch...finally - throw</b> - (21/03/2023) A combinação try...catch...finally trata os erros sem interromper a execução. <br>https://github.com/fdananda/javascript/tree/main/try_catch_finally</li>
 
