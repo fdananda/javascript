@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>try...catch...finally - throw</h1>
+	<p>A combinação <strong>try...catch...finally</strong> trata os erros sem interromper a execução. A instrução <strong>try</strong> contém o bloco de código a ser executado que pode (ou não) gerar um erro. A instrução <strong>catch</strong> define um bloco de código que será executado caso um erro seja capturado. A instrução <strong>finally</strong> define um bloco de código a ser executado independentemente do resultado. A instrução <strong>throw</strong> define um erro personalizado.</p>
+	<p>Exemplo: 
+		<button onclick="gerarTryCatch()" id="botao">Clique para ver o exemplo abaixo</button>
+		<p id="exemplos"></p>
+		<p id="exemplos2"></p>
+
+		<div class="exemplo">
+<pre>
+let saida = document.getElementById("exemplos")
+
+function gerarTryCatch() {   
+
+    let saida2 = document.getElementById("exemplos2")
+
+    try{
+      //alert("Hello World!") - CÓDIGO CORRETO
+      alerta("Hello World!") //CÓDIGO ERRADO
+    }catch(erro){ 
+      tratarErro(erro)
+    }finally{
+      saida2.innerHTML = `Finalizado`
+    }
+}
+
+function tratarErro( erro ){
+  if (erro.message == "alerta is not defined") {
+    throw new Error(saida.innerHTML = "Função 'alerta' não existe") 
+  }else{
+    throw new Error(saida.innerHTML = "Um erro aconteceu") 
+  }
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/jsref_try_catch.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
