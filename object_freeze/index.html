@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Object.freeze()</h1>
+	<p>O método <strong>freeze()</strong> de Object impede que as propriedades existentes sejam modificadas e que novas propriedades sejam adicionadas ao objeto específico.</p>
+	<p>Exemplo: 
+		<button onclick="gerarObjetoPessoa()" id="botao">Clique para ver o exemplo de classe/objeto abaixo</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+class Pessoa {
+  constructor(nome, nascimento) {
+    this.nome       = nome;
+    this.nascimento = nascimento;
+  }
+
+  calcularIdade(){
+    const dataAtual = new Date();
+    return dataAtual.getFullYear() - this.nascimento;
+  }
+}
+
+function gerarObjetoPessoa() {   
+
+    const objetoPessoa = new Pessoa("Fernanda", 1977)
+    
+    Object.freeze(objetoPessoa)
+    objetoPessoa.nome = "Daniel"
+    objetoPessoa.nascimento = 1974
+
+    let saida = document.getElementById("exemplos")
+    saida.innerHTML = `A pessoa é ${objetoPessoa.nome}, nascida em ${objetoPessoa.nascimento} e com ${objetoPessoa.calcularIdade()} anos.`
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.blog/object-freeze-javascript-js" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
