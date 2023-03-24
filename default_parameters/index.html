@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Function - Default Parameters/parâmetros padrão</h1>
+	<p>Se uma função for chamada com argumentos ausentes, é possível atribuir um valor padrão ao parâmetro ao invés de os valores ausentes serem definidos como undefined.</p>
+	<p>Exemplo: <br>
+		<button onclick="chamarFuncaoMultiplicar()" id="botao">Clique aqui para chamar função multiplicar sem parâmetros</button><p>
+		<button onclick="chamarFuncaoMultiplicar(2,10)" id="botao">Clique aqui para chamar função multiplicar com parâmetros 2 e 10</button><p>
+
+		<button onclick="chamarFuncaoSomar()" id="botao">Clique aqui para chamar função somar sem parâmetros</button><p>
+		<button onclick="chamarFuncaoSomar(2,10)" id="botao">Clique aqui para chamar função somar com parâmetros 2 e 10</button><p>	
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+//Opção 1 - Atribuir um valor padrão usando o método isNaN de teste
+function chamarFuncaoMultiplicar(x,y) {
+	let saida = document.getElementById("exemplos")
+
+    numero1 = isNaN(x) ? 0 : x
+    numero2 = isNaN(y) ? 0 : y
+    let resultado = numero1 * numero2
+	saida.innerHTML = "O resultado é: " + resultado
+}
+
+//Opção 2 - Atribuir um valor padrão na declaração da função
+function chamarFuncaoSomar(x = 0, y = 0) {
+    let saida = document.getElementById("exemplos")
+    numero1 = x
+    numero2 = y
+
+    let resultado = numero1 + numero2
+    saida.innerHTML = "O resultado é: " + resultado
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/howto/howto_js_default_parameters.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
