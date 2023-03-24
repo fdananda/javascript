@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>isNaN()</h1>
+	<p>O método <strong>isNaN()</strong> verifica se um valor não é um número ("Not-a-Number"). O isNaN() retorna true se um valor não for um número e false se for um número. O método primeiro converte o valor em um número antes de testá-lo.
+
+	</p>
+	<p>Exemplo: 
+		<button onclick="checarSeEUmNumero()" id="botao">Clique para ver o exemplo abaixo</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function checarSeEUmNumero() {   
+
+    let saida = document.getElementById("exemplos")
+
+    let nome = "Fernanda"
+    let nascimento = 1977
+    let nan1 = isNaN(nome)
+    let nan2 = isNaN(nascimento)
+
+    saida.innerHTML = `A variável nome contém o valor ${nome} e não é um número: ${nan1}
+    A variável nascimento contém o valor ${nascimento} e não é um número: ${nan2}`
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/jsref_isnan.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
