@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Callbacks</h1>
+	<p>Um <strong>callback</strong> é uma função passada como um argumento para outra função e que pode ser executada após a conclusão de outra. Os callbacks geralmente são utilizados em funções assíncronas, onde uma função tem que esperar por outra função.</p>
+	<p>Exemplo: <br>
+		<button onclick="chamarFuncaoMultiplicar(2,10, imprimirResultado, imprimirErro)" id="botao">Clique aqui para chamar função multiplicar com parâmetros corretos</button><p>
+		<button onclick="chamarFuncaoMultiplicar('Fernanda', 'Helena',imprimirResultado, imprimirErro)" id="botao">Clique aqui para chamar função multiplicar com parâmetros incorretos</button><p>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+let saida = document.getElementById("exemplos")
+
+function chamarFuncaoMultiplicar(x, y, funcaoCallbackSucesso, funcaoCallbackErro) {
+	
+    //Função callback
+    if (isNaN(x) || isNaN(y)) {
+        imprimirErro()    
+    }else{
+      let resultado = x * y
+      imprimirResultado(resultado)  
+    }    
+}
+
+function imprimirResultado(resultado) {
+    saida.innerHTML = "O resultado é: " + resultado
+}
+
+
+function imprimirErro() {
+    saida.innerHTML = "Erro na execução"
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/js/js_callback.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
