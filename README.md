@@ -27,4 +27,5 @@ Códigos JavaScript
 <li><b>Function - Default Parameters</b> - (23/03/2023) Permite atribuir um valor padrão ao parâmetro <br>https://github.com/fdananda/javascript/tree/main/default_parameters</li>
 <li><b>Callbacks</b> - (24/03/2023) Um callback é uma função passada como um argumento para outra função.<br>https://github.com/fdananda/javascript/tree/main/callback</li>
 <li><b>String</b> - (25/03/2023) As Strings são utilizadas para armazenar dados em forma de texto.<br>https://github.com/fdananda/javascript/tree/main/string</li>
+<li><b>Math</b> - (25/03/2023) Permite que sejam executadas operações matemáticas.<br>https://github.com/fdananda/javascript/tree/main/math</li>
 
