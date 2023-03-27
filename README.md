@@ -9,7 +9,7 @@ Códigos JavaScript
 <li><b>Number toFixed()</b> - (11/03/2023) -  converte um número em uma string e arredonda para um número especificado de casas decimais.<br>https://github.com/fdananda/javascript/tree/main/number_tofixed</li>
 <li><b>Audio play() Method / Audio pause() Method</b> - (13/03/2023) -  O método audio.play() inicia a reprodução do áudio atual. O método audio.pause() interrompe o áudio que está sendo reproduzido.<br>https://github.com/fdananda/javascript/tree/main/audio</li>
 <li><b>Boolean()</b> - (13/03/2023) - descobre se uma expressão (ou uma variável) é verdadeira ou falsa<br>https://github.com/fdananda/javascript/tree/main/boolean</li>
-<li><b>Date()</b> - (13/03/2023) - cria um objeto de data com a data e hora atuais.<br>https://github.com/fdananda/javascript/tree/main/date</li>
+<li><b>Date / new Date()</b> - (13/03/2023) - O objeto Date permite trabalhar com datas e horas. O método new Date() cria um objeto de data <br>https://github.com/fdananda/javascript/tree/main/date</li>
 <li><b>Function()</b> - (14/03/2023) - Em Javascript, as funções são objetos e possuem propriedades e métodos.<br>https://github.com/fdananda/javascript/tree/main/function</li>
 <li><b>Array</b> - (14/03/2023) - O objeto Array é usado para armazenar vários valores em uma única variável.<br>https://github.com/fdananda/javascript/tree/main/array</li>
 <li><b>Template String/Literals</b> - (14/03/2023) - O Template String/Literals usa acentos graves (``) em vez de aspas ("") para definir uma string.<br>https://github.com/fdananda/javascript/tree/main/template_string</li>
