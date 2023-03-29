@@ -1,14 +1,21 @@
 function obterElemento(id) {
 
-	let numeroConvertido = converterEmNumber(id);
+	let get_id = document.getElementById(id)
 
-	let textoSaida = `O número recuperado é: ${numeroConvertido}`
+	let numeroConvertido = converterEmNumero(id);
+
+	let textoSaida = 
+	`O número recuperado é: ${numeroConvertido}<br>
+	get_id: ${get_id}<br>
+	get_id.value: ${get_id.value}<br>
+	get_id.id: ${get_id.id}<br>
+	`
 
 	let saida = document.getElementById("exemplos")
 	saida.innerHTML = textoSaida
 }
 
-function converterEmNumber(id)
+function converterEmNumero(id)
 {
     let elemento = document.getElementById(id);
     let texto = elemento.value;
