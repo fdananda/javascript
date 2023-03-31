@@ -10,22 +10,33 @@
 	<p>O método <strong>getElementById()</strong> obtém o elemento com o id especificado ou retorna null se o elemento não existir.</p>
 	<p>Exemplo: 
 		<input type="number" id="numero" value="1" min="1" max="100"> 
-		<button onclick="obterElemento('numero')" id="botao">Clique para ver o exemplo abaixo:</button>
+		<button onclick="obterElementoPeloId('numero')" id="botao">Clique para ver o exemplo abaixo:</button>
 		<p id="exemplos"></p>
 
 		<div class="exemplo">
 <pre>
-function obterElemento(id) {
+function obterElementoPeloId(id) {
 
-	let numeroConvertido = converterEmNumber(id);
+	let get_id = document.getElementById(id)
 
-	let textoSaida = `O número recuperado é: ${numeroConvertido}`
+	let numeroConvertido = converterEmNumero(id);
+
+	let textoSaida = 
+	`O número recuperado é: ${numeroConvertido}
+	typeof numeroConvertido: ${typeof numeroConvertido}
+	get_id: ${get_id}
+	typeof get_id: ${typeof get_id}
+	get_id.value: ${get_id.value}
+	typeof get_id.value: ${typeof get_id.value}
+	get_id.id: ${get_id.id}
+	typeof get_id.id: ${typeof get_id.id}
+	`
 
 	let saida = document.getElementById("exemplos")
 	saida.innerHTML = textoSaida
 }
 
-function converterEmNumber(id)
+function converterEmNumero(id)
 {
     let elemento = document.getElementById(id);
     let texto = elemento.value;
