@@ -29,4 +29,4 @@ Códigos JavaScript
 <li><b>String</b> - (25/03/2023) As Strings são utilizadas para armazenar dados em forma de texto.<br>https://github.com/fdananda/javascript/tree/main/string</li>
 <li><b>Math</b> - (25/03/2023) Permite que sejam executadas operações matemáticas.<br>https://github.com/fdananda/javascript/tree/main/math</li>
 <li><b>DOM getElementById()</b> - (26/03/2023) Obtém o elemento com o id especificado ou retorna null se o elemento não existir.<br>https://github.com/fdananda/javascript/tree/main/dom_get_element_by_id</li>
-
+<li><b>DOM querySelector()</b> - (31/03/2023) etorna o primeiro elemento que corresponde a um seletor CSS especificado.<br>https://github.com/fdananda/javascript/tree/main/dom_query_selector</li>
