@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>DOM getElementsByName()</h1>
+	<p>O método <strong>getElementsByName()</strong> retorna uma coleção de elementos (NodeList) com um nome especificado.</p>
+	<p>Exemplo: 
+		<input type="number" id="numero1" value="1" min="1" max="100"  name="numero"> 
+		<input type="number" id="numero2" value="1" min="1" max="100"  name="numero"> 
+		<input type="number" id="numero3" value="1" min="1" max="100"  name="numero"> 
+		<button onclick="obterElementosPeloNome('numero')" id="botao">Clique para ver o exemplo abaixo:</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function obterElementosPeloNome(numero) {
+
+	let colecaoClassName = document.getElementsByName(numero)
+	let saida = document.getElementById("exemplos")
+
+	let textoSaida = `A colecaoClassName é uma: ${colecaoClassName}<br>
+	O tamanho da colecaoClassName é: ${colecaoClassName.length}<br>
+	`
+
+	for (let i =0; i < colecaoClassName.length; i++) {	
+	textoSaida += `O item ${i} é ${colecaoClassName[i].value}<br>`
+	saida.innerHTML = textoSaida
+	}
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/met_doc_getelementsbyname.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
