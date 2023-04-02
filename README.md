@@ -32,3 +32,4 @@ Códigos JavaScript
 <li><b>DOM querySelector()</b> - (31/03/2023) Retorna o primeiro elemento que corresponde a um seletor CSS especificado.<br>https://github.com/fdananda/javascript/tree/main/dom_query_selector</li>
 <li><b>DOM getElementsByTagName()</b> - (31/03/2023) Retorna uma coleção de todos os elementos com um nome de tag especificado.<br>https://github.com/fdananda/javascript/tree/main/dom_get_elements_by_tag_name</li>
 <li><b>DOM getElementsByClassName()</b> - (01/04/2023) Retorna uma coleção de elementos com nomes de classes especificados.<br>https://github.com/fdananda/javascript/tree/main/dom_get_elements_by_class_name</li>
+<li><b>DOM getElementsByName()</b> - (01/04/2023) Retorna uma coleção de elementos (NodeList) com um nome especificado<br>https://github.com/fdananda/javascript/tree/main/dom_get_elements_by_name</li>
