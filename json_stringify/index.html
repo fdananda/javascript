@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>JSON stringify()</h1>
+	<p>O método JSON stringify() converte objetos JSON em strings.</p>
+	<p>Exemplo: <br>
+		<button onclick="converterJSONEmString()" id="botao">Clique aqui para chamar exemplos abaixo</button><p>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function converterJSONEmString(){
+
+    let json1 = {"nome": "Fernanda", "sobrenome": "Moreira", "idade": 45}
+    let jsonConvertido = JSON.stringify(json1)
+
+    var jsonConvertido2 = JSON.stringify(json1, function (chave, valor) {
+    if (chave == "nome" || chave == "sobrenome") {
+        return valor.toUpperCase();
+    } else {
+        return valor;
+    }
+    })
+
+    let saida = document.getElementById("exemplos")
+    let textoSaida = `
+    JSON1 convertido em String: ${jsonConvertido}<br>
+    JSON2 convertido em String: ${jsonConvertido2}
+    `
+
+    saida.innerHTML = textoSaida
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/jsref_stringify.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
