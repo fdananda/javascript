@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>JSON parse()</h1>
+	<p>O método JSON parse() converte uma string em objeto JSON.</p>
+	<p>Exemplo: <br>
+		<button onclick="converterStringEmJSON()" id="botao">Clique aqui para chamar exemplos abaixo</button><p>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function converterStringEmJSON(){
+
+    let string = '{"nome": "Fernanda", "sobrenome": "Moreira", "idade": 45}'
+    let string2 = ""
+    let jsonConvertido = JSON.parse(string)
+    let saida = document.getElementById("exemplos")
+
+    let jsonConvertido2 = JSON.parse(string, function (chave, valor) {
+    if (chave == "nome" || chave == "sobrenome") {
+        return valor.toUpperCase();
+    } else {
+        return valor;
+    }
+    })
+
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+                string2 = JSON.parse(this.responseText);
+                
+                let textoSaida = `
+                JSON1 convertido em String nome: ${jsonConvertido.nome}
+                JSON1 convertido em String sobrenome: ${jsonConvertido.sobrenome}
+                JSON1 convertido em String idade: ${jsonConvertido.idade}
+                JSON2 convertido em String nome caixa alta: ${jsonConvertido2.nome}
+                JSON2 convertido em String sobrenome caixa alta: ${jsonConvertido2.sobrenome}
+                JSON2 convertido em String idade: ${jsonConvertido2.idade}
+                JSON convertido a partir da internet - id: ${string2.id}
+                JSON convertido a partir da internet - date: ${string2.date}
+                JSON convertido a partir da internet - title: ${string2.title.rendered}
+                JSON convertido a partir da internet - link: ${string2.link}
+                `
+                saida.innerHTML = textoSaida
+            }else{
+                string2 = "Erro!";
+            }
+        };
+    xmlhttp.open("GET", "https://www.soccerincanada.ca/wp-json/wp/v2/posts/1822/", true);
+    xmlhttp.send();
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/jsref_parse_json.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
