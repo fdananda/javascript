@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Property accessors</h1>
+	<p>O JavaScript permite acessar as propriedades de duas maneiras: Notação de ponto (mais comum) ou Notação de colchetes [].</p>
+	<p>Exemplo: <br>
+		<button onclick="acessarPropriedades()" id="botao">Clique aqui para chamar exemplos abaixo</button><p>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function acessarPropriedades(){
+
+    let saida = document.getElementById("exemplos")
+    let textoSaida = ""
+
+     const objetoPessoa = {
+        nome       : "Fernanda",
+        nascimento : 1977,
+    }
+
+    textoSaida = `
+     Acessando propriedade nome com notação de ponto: ${objetoPessoa.nome}
+     Acessando propriedade nome com notação de colchetes: ${objetoPessoa['nascimento']}
+     `
+
+    saida.innerHTML = textoSaida
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.geeksforgeeks.org/javascript-property-accessors-method/" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
