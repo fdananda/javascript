@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>Window localStorage</h1>
+	<p>O objeto <strong>localStorage</strong> permite salvar pares chave/valor no navegador. Métodos: <br>
+  <ul>
+    <li>localStorage.setItem(key, value)  - Salva dados no armazenamento local</li>
+    <li>localStorage.getItem(key)         - Lê dados do armazenamento local</li>
+    <li>localStorage.removeItem(key)      - Remover dados do armazenamento local</li>
+    <li>localStorage.clear()              - Limpar armazenamento local</li>
+  </ul>
+  </p>
+	<p>Exemplo: 
+		<button onclick="salvarDados()" id="botao">Salvar dados</button>
+    <button onclick="lerDados()" id="botao">Ler dados</button>
+    <button onclick="removerDados()" id="botao">Remover dados</button>
+    <button onclick="limparDados()" id="botao">Limpar dados</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+let saida = document.getElementById("exemplos")
+
+class Pessoa {
+  constructor(nome, nascimento) {
+    this.nome       = nome;
+    this.nascimento = nascimento;
+  }
+
+  calcularIdade(){
+    const dataAtual = new Date();
+    return dataAtual.getFullYear() - this.nascimento;
+  }
+}
+
+function salvarDados() {   
+
+    const objetoPessoa = new Pessoa("Fernanda", 1977)
+    localStorage.setItem("nome", objetoPessoa.nome);
+    localStorage.setItem("nascimento", objetoPessoa.nascimento);
+    localStorage.setItem("idade", objetoPessoa.calcularIdade());
+
+    saida.innerHTML = `Dados gravados com sucesso: A pessoa é ${localStorage.getItem("nome")}, nascida em ${localStorage.getItem("nascimento")} e com ${localStorage.getItem("idade")} anos.`
+}
+
+function lerDados() {  
+
+    if (localStorage.getItem("nome") == null && localStorage.getItem("nascimento") == null && localStorage.getItem("idade") == null ) {
+      saida.innerHTML = `Dados não localizados`
+    }else if (localStorage.getItem("nascimento") == null && localStorage.getItem("idade") == null){
+      saida.innerHTML = `A pessoa é ${localStorage.getItem("nome")}, mas não quis revelar a idade`
+    }else{
+      saida.innerHTML = `A pessoa é ${localStorage.getItem("nome")}, nascida em ${localStorage.getItem("nascimento")} e com ${localStorage.getItem("idade")} anos.`
+    }
+}
+
+
+function removerDados() {  
+
+    localStorage.removeItem("nascimento") 
+    localStorage.removeItem("idade") 
+
+    if (localStorage.getItem("nome") == null && localStorage.getItem("nascimento") == null && localStorage.getItem("idade") == null ) {
+      saida.innerHTML = `Dados não localizados`
+    }else{
+      saida.innerHTML = `Dados removidos: A pessoa é ${localStorage.getItem("nome")}, mas não quis revelar a idade`
+    }
+}
+
+
+function limparDados() {  
+
+    localStorage.clear() 
+    saida.innerHTML = `Dados excluídos com sucesso`
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/prop_win_localstorage.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
