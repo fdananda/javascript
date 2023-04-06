@@ -35,3 +35,4 @@ Códigos JavaScript
 <li><b>DOM getElementsByName()</b> - (01/04/2023) Retorna uma coleção de elementos (NodeList) com um nome especificado<br>https://github.com/fdananda/javascript/tree/main/dom_get_elements_by_name</li>
 <li><b>JSON stringify()</b> - (04/04/2023) Converte objetos JSON em strings.<br>https://github.com/fdananda/javascript/tree/main/json_stringify</li>
 <li><b>JSON parse()</b> - (06/04/2023) Converte uma string em objeto JSON.<br>https://github.com/fdananda/javascript/tree/main/json_parse</li>
+<li><b>Property accessors</b> - (06/04/2023) O JavaScript permite acessar as propriedades de duas maneiras: Notação de ponto (mais comum) ou Notação de colchetes [].<br>https://github.com/fdananda/javascript/tree/main/property_accessors</li>
