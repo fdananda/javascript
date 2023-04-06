@@ -36,3 +36,4 @@ Códigos JavaScript
 <li><b>JSON stringify()</b> - (04/04/2023) Converte objetos JSON em strings.<br>https://github.com/fdananda/javascript/tree/main/json_stringify</li>
 <li><b>JSON parse()</b> - (06/04/2023) Converte uma string em objeto JSON.<br>https://github.com/fdananda/javascript/tree/main/json_parse</li>
 <li><b>Property accessors</b> - (06/04/2023) O JavaScript permite acessar as propriedades de duas maneiras: Notação de ponto (mais comum) ou Notação de colchetes [].<br>https://github.com/fdananda/javascript/tree/main/property_accessors</li>
+<li><b>Window localStorage</b> - (06/04/2023)O objeto localStorage permite salvar pares chave/valor no navegador.<br>https://github.com/fdananda/javascript/tree/main/window_localstorage</li>
