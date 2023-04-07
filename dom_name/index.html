@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>DOM form name</h1>
+	<p>A propriedade <strong>name</strong> define ou retorna o valor do atributo name em um formulário.</p>
+	<p>Exemplo: 
+		<form name="formularioNumeros">
+		<input type="number" name="numero1" value="1" min="1" max="100"  name="numero"> 
+		<input type="number" name="numero2" value="1" min="1" max="100"  name="numero"> 
+		<input type="number" name="numero3" value="1" min="1" max="100"  name="numero"> 
+		</form>
+		<p></p>
+		<form name="formularioTextos">
+		<input type="text" value="Digite seu nome" name="nome"> 
+		<input type="text" value="Digite seu sobrenome" name="sobrenome"> 
+		</form>
+		<p></p>
+		
+		
+		<button onclick="obterNames()" id="botao">Clique para ver o exemplo abaixo:</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function obterNames() {
+
+	let saida = document.getElementById("exemplos")
+	let elementoNumero1 = document.formularioNumeros.numero1.value
+	let elementoNumero2 = document.formularioNumeros.numero2.value
+	let elementoNumero3 = document.formularioNumeros.numero3.value
+
+	let elementoTextoNome = document.formularioTextos.nome.value
+	console.log(elementoTextoNome)
+	let elementoTextoSobrenome = document.formularioTextos.sobrenome.value
+
+
+	let textoSaida = `
+	Valor do Elemento ${document.formularioNumeros.numero1.name} =  ${elementoNumero1}
+	Valor do Elemento ${document.formularioNumeros.numero2.name} =  ${elementoNumero2}
+	Valor do Elemento ${document.formularioNumeros.numero3.name} =  ${elementoNumero3}
+
+	Valor do Elemento ${document.formularioTextos.nome.name} =  ${elementoTextoNome}
+	Valor do Elemento ${document.formularioTextos.sobrenome.name} =  ${elementoTextoSobrenome}
+	`
+	saida.innerHTML = textoSaida
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/prop_form_name.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
