@@ -39,3 +39,4 @@ Códigos JavaScript
 <li><b>Window localStorage</b> - (06/04/2023) O objeto localStorage permite salvar pares chave/valor no navegador.<br>https://github.com/fdananda/javascript/tree/main/window_localstorage</li>
 <li><b>Fetch API</b> - (06/04/2023) O método fetch() inicia o processo de busca de um recurso de um servidor e retorna um Promise com um objeto Response.<br>https://github.com/fdananda/javascript/tree/main/api_fetch</li>
 <li><b>DOM forms</b> - (07/04/2023) A propriedade forms retorna uma coleção de todos os elementos "form" em um documento.<br>https://github.com/fdananda/javascript/tree/main/dom_forms</li>
+<li><b>DOM form name</b> - (07/04/2023) A propriedade name define ou retorna o valor do atributo name em um formulário.<br>https://github.com/fdananda/javascript/tree/main/dom_name</li>
