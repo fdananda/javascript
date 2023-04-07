@@ -1,5 +1,8 @@
 function obterDadosWeb(url){
 
+  let botao = document.getElementById('botao');
+  botao.setAttribute("disabled","");
+
   fetch(url).then(response => {
       if(!response.ok){
         alert("Falha no processamento!")
@@ -15,4 +18,7 @@ function obterDadosWeb(url){
         `
       }).catch(erro => alert("Erro de JSON: " + erro))
     }).catch(erro => alert("Erro na busca: " + erro))
+    .finally( mensagem => {
+        botao.removeAttribute("disabled");
+      })
 }
