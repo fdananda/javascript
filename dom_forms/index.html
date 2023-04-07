@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title></title>
+</head>
+<body>
+	<h1>DOM forms</h1>
+	<p>A propriedade <strong>forms</strong> retorna uma coleção de todos os elementos "form" em um documento.</p>
+	<p>Exemplo: 
+		<form id="formularioNumeros">
+		<input type="number" id="numero1" value="1" min="1" max="100"  name="numero"> 
+		<input type="number" id="numero2" value="1" min="1" max="100"  name="numero"> 
+		<input type="number" id="numero3" value="1" min="1" max="100"  name="numero"> 
+		</form>
+		<p></p>
+		<form id="formularioTextos">
+		<input type="text" id="nome" value="Digite seu nome" name="nome"> 
+		<input type="text" id="sobrenome" value="Digite seu sobrenome" name="sobre"> 
+		</form>
+		<p></p>
+		
+		
+		<button onclick="obterForms()" id="botao">Clique para ver o exemplo abaixo:</button>
+		<p id="exemplos"></p>
+
+		<div class="exemplo">
+<pre>
+function obterForms() {
+
+	let saida = document.getElementById("exemplos")
+	let forms = document.forms
+	let textoSaida = ""
+
+	for (let i = 0; i < forms.length; i++) {
+		textoSaida += `&lt;strong>Formulário ${i + 1} = ${forms[i].id}&lt;/strong>
+		` 
+		let form = document.forms[i]
+		for (var j = 0; j &lt;form.length; j++) {
+			textoSaida += `
+			Id do Elemento ${j + 1} do form ${i + 1} = ${form[j].id} / 
+			Valor ${j + 1} do Elemento ${j + 1} do form ${i + 1} = ${form[j].value} 
+		`	
+		}
+	}
+	saida.innerHTML = textoSaida
+}
+</pre>
+		</div>
+	<p class="referencia">Referência: <a href="https://www.w3schools.com/jsref/coll_doc_forms.asp" target="_blank">www.w3schools</a></p>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
