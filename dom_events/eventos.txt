@@ -1,0 +1,36 @@
+Eventos de interface:
+- load - a página terminou de carregar
+- unload - a página está carregando
+- error - o navegador encontra um erro
+- resize - a janela foi redimensionada
+- scroll - a página foi rolada
+
+Eventos de teclado:
+- keydown - tecla foi pressionada
+- keyup - tecla foi solta
+- keypress - caracteres estão sendo inseridos
+
+Eventos de mouse:
+- click - pressiona e solta o mouse
+- dbclick - pressiona e solta o mouse duas vezes
+- mousedown - pressiona o mouse sobre um elemento
+- mouseup - solta o mouse sobre um elemento
+- mousemove - move o mouse
+- mouseover - move o mouse sobre um elemento
+- mouseout - move o mouse para fora do elemento
+
+Eventos de Focus
+- focus - ganha o foco
+- blur - perde o foco
+
+Eventos de formulário:
+- input - valor do <input> foi alterado
+- change - valor em uma caixa de seleção foi alterado
+- submit - enviou o formulário
+- reset - clicou no botão reset
+- cut - recortou o conteúdo
+- copy - copiou o conteúdo
+- paste - colou o conteúdo
+- select - selecionou o texto
+
+https://www.w3schools.com/jsref/dom_obj_event.asp
